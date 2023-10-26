@@ -3,7 +3,7 @@ import pygame
 
 client_sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 client_sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
-client_sock.connect(('localhost ', 1488))
+client_sock.connect(('192.168.91.65', 1234))
 
 def find(s):
     s = s[1:len(s) - 1]
